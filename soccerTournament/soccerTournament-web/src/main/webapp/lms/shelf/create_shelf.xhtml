@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:rich="http://richfaces.org/rich">
+
+
+
+	<ui:define name="content">
+
+		<h:form class="form-horizontal" role="form" prependId="false">
+			<h3>Shelf Details</h3>
+
+			<table id="compDetails">
+
+				<tr>
+					<td valign="top"><label for="shelfName">Name</label> <h:inputText
+							type="text" class="form-control" id="shelfName"
+							placeholder="shlfName" value="#{shelfController.shelf.shelfName}" /> <p:message
+							for="shelfName" errorClass="invalid" /> 
+							
+							<label for="area">Area
+					</label> <h:inputText type="text" class="form-control" id="area"
+							maxlength="10" placeholder="Area"
+							value="#{shelfController.shelf.area}" /> <p:message for="area"
+							errorClass="invalid" /></td>
+					<td valign="top">
+					
+					<label for="capacity">Capacity</label>
+						<p:inputMask type="text" styleClass="form-control" id="capacity"
+							placeholder="Capacity"
+							value="#{shelfController.shelf.capacity}" /> <p:message
+							for="capacity" errorClass="invalid" /> </td>
+				</tr>
+
+			</table>
+			<p:messages id="messages" showDetail="false" autoUpdate="true"
+				closable="true" />
+
+			<div class="btnContainer">
+				<h:commandButton action="#{shelfController.addShelfDetails()}"
+					value="Create" class="btn btn-primary" />
+				<h:button outcome="shelf_list.xhtml?faces-redirect=true"
+					class="btn btn-primary" value="Back" />
+			</div>
+		</h:form>
+
+		<style>
+cancel {
+	display: none;
+}
+
+#compDetails td {
+	width: 450px;
+}
+
+label {
+	height: 30px;
+	margin-top: 5px;
+}
+</style>
+	</ui:define>
+</ui:composition>

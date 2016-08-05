@@ -1,0 +1,26 @@
+1455004138599	Rename resource 'account_list.xhtml'
+1455004156914	Rename resource 'create_account.xhtml'
+1455004169567	Rename resource 'edit_account_confirmation.xhtml'
+1455004183766	Rename resource 'edit_account.xhtml'
+1455004441905	Rename type 'BackOfficeAbstractController'
+1455015681996	Rename resource 'default.xhtml'
+1455121798585	Move folder
+1455308515140	Delete element
+1455355040097	Copy files
+1455355142506	Rename resource 'book_list.xhtml'
+1455355162119	Rename resource 'create_book.xhtml'
+1455355169932	Delete element
+1455355185612	Rename resource 'edit_book_confirmation.xhtml'
+1455355197051	Rename resource 'edit_book.xhtml'
+1455358423418	Delete element
+1455358438512	Copy files
+1455358463764	Rename resource 'create_shelf.xhtml'
+1455358514981	Rename resource 'create_stuff.xhtml'
+1455358527774	Rename resource 'edit_shelf.xhtml'
+1455358537166	Rename resource 'shelf_list.xhtml'
+1455360867627	Rename resource 'staff._list.xhtml'
+1455361058525	Rename local variable 'buk'
+1455361877445	Copy folder
+1455361901350	Rename resource 'create_staff.xhtml'
+1455361911968	Rename resource 'edit_staff..xhtml'
+1455361921698	Rename resource 'staff_list.xhtml'

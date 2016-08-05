@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Soccer Tournament.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet"
+		href="#{request.contextPath}/shares/css/bootstrap-3.1.1.min.css" />
+
+	<script src="#{request.contextPath}/shares/js/bootstrap-3.1.1.min.js"></script>
+
+	<link rel="stylesheet"
+		href="#{request.contextPath}/shares/css/screen.css" />
+	<link rel="stylesheet"
+		href="#{request.contextPath}/shares/css/font-awesome-4.0.3.min.css" />
+
+
+</h:head>
+<h:body style="margin:auto;color:#656263;background:#fff">
+
+	<!--begin header-->
+	<div id="header" class="blueBack"
+		style="height: 63px; margin-top: -11px; position: fixed; width: 100%; z-index: 101">
+		<a class="logoLink" href="#{request.contextPath}/landing_page.xhtml"
+			target="_parent"><img id="logo"
+			src="#{request.contextPath}/shares/brand/images/logo.jpeg"
+			alt="eeziFone" /></a> <a class="logoLinkPrint"><img id="logo"
+			src="#{request.contextPath}/shares/brand/images/logo.jpeg"
+			alt="eeziFone" /></a>
+
+		<div class="navbar navbar-inverse  blueBack"
+			style="display:#{request.getUserPrincipal()==null ? 'block' : 'none'};margin-left: 352px;
+    margin-top: -47px; ">
+
+			<h:form>
+
+				<p:menubar autoDisplay="false" style="z-index:10;">
+
+					<p:submenu label="View Statistics">
+						<p:menuitem value="Teams"
+							action="#{footballController.findFolder()}" />
+					</p:submenu>
+					
+					<p:submenu label="Books">
+						<p:menuitem value="View List" url="/lms/book/book_list.xhtml" />
+
+					</p:submenu>
+					
+					<p:submenu label="Users">
+						<p:menuitem value="View List" url="/lms/staff/staff_list.xhtml" />
+						<p:menuitem value="Create" url="/lms/staff/create_staff.xhtml" />
+
+					</p:submenu>
+					
+
+
+				</p:menubar>
+			</h:form>
+
+
+		</div>
+
+	</div>
+
+	<div style="display: none;" id="source-button"
+		class="btn btn-primary btn-xs">&lt; &gt;</div>
+
+	<!--Logo section -->
+
+
+	<!--support numbers -->
+	<div id="support"></div>
+	<!--social tags -->
+	<div id="socialStrip"></div>
+	<!-- contentless coloured divider  -->
+	<div id="divider"></div>
+
+	<!--end header section -->
+
+	<div class="content">
+		<div class="container">
+			<ui:insert name="content">
+
+			</ui:insert>
+		</div>
+	</div>
+	<style>
+.ui-growl-item-container {
+	background: none repeat scroll 0 0 #ed455a;
+	height: 105px;
+	margin-left: -821px;
+	opacity: 1;
+	position: relative;
+	width: 920px;
+}
+
+.ui-growl-message {
+	float: left;
+	padding: 0 0 5px;
+	width: 920px;
+}
+
+.ui-growl {
+	top: 176px;
+}
+
+.fileupload-buttonbar .ui-button {
+	margin-right: 0.2em;
+	vertical-align: text-top;
+}
+
+.ui-menu .ui-menu-parent .ui-menu-child {
+	width: 15.5em;
+}
+</style>
+	<script type="text/javascript">
+	$(function () {
+	  $("[data-toggle='tooltip']").tooltip();
+	});
+</script>
+
+</h:body>
+</html>

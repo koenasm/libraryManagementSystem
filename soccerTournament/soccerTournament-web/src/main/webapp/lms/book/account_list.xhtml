@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:a4j="http://richfaces.org/a4j">
+	<ui:define name="content">
+
+		<h:form id="customerTableList" prependId="true"
+			enctype="multipart/form-data">
+			<br />
+			<h:commandLink styleClass="refresh fa fa-refresh" value=" Refresh"
+				action="#{accountController.refreshAccountList()}"></h:commandLink>
+			<br />
+			<p:accordionPanel>
+				<p:tab title=" Account List">
+					<h:panelGrid columns="2" cellpadding="10">
+
+						<p:dataTable id="customerTable"
+							value="#{accountController.accountList}" var="customer"
+							styleClass="order-table" headerClass="order-table-header"
+							rowClasses="order-table-odd-row,order-table-even-row"
+							sortBy="#{customer.accountName}" paginator="true" rows="10">
+
+							<p:column headerText="Name"
+								sortBy="#{customer.accountName}">
+
+								<h:outputText value="#{customer.accountName}" required="true"
+									label="text" />
+							</p:column>
+							<p:column headerText="Registration Number">
+
+								<h:outputText value="#{customer.companyRegNumber}"
+									required="true" label="text"></h:outputText>
+
+							</p:column>
+							<p:column headerText="Account Number"
+								sortBy="#{customer.accountNumber}">
+
+								<h:outputText value="#{customer.accountNumber}" required="true"
+									label="text"></h:outputText>
+
+							</p:column>
+							<p:column headerText="Status" sortBy="#{customer.accountStatus}"
+								styleClass="#{customer.accountStatus}">
+
+								<h:outputText value="#{customer.accountStatus.toString()}"
+									required="true" label="text"></h:outputText>
+
+							</p:column>
+							<p:column headerText="Action" style="min-width:80px;">
+								<h:commandLink title="Click to Maintain"
+									action="#{accountController.displaySelectedAcccount(customer)}"
+									value=""
+									disabled="#{(request.isUserInRole('ACCOUNT_MANAGER') and (customer.accountStatus == 'BLOCKED' or customer.accountStatus == 'CLOSED')) or (request.isUserInRole('FINANCIAL_CONTROLLER') and customer.accountStatus == 'CLOSED')}"
+									rendered="#{request.isUserInRole('ACCOUNT_MANAGER') or request.isUserInRole('FINANCIAL_CONTROLLER') or request.isUserInRole('SUPER_USER')}">
+
+									<div class="fasingleContainer" style="margin-top: 0px">
+										<i class="fa fa-pencil-square-o"></i>
+									</div>
+								</h:commandLink>
+
+								<h:commandLink value="" title="Click to view templates"
+									rendered="#{request.isUserInRole('ACCOUNT_MANAGER') or request.isUserInRole('FINANCIAL_CONTROLLER')}"
+									action="#{phoneTemplateController.getPhoneTemplateList(customer)}"
+									style="display:#{customer.accountStatus == 'APPROVED' ? 'inline' : 'none'} ">
+									<div class="fasingleContainer" style="margin-top: 0px">
+										<i class="fa fa-phone"></i>
+									</div>
+								</h:commandLink>
+								
+								
+								<h:commandLink value="" title="Click to view Campaigns"
+									rendered="#{request.isUserInRole('ACCOUNT_MANAGER') or request.isUserInRole('FINANCIAL_CONTROLLER')}"
+									action="#{campaignController.getCampaignsForAccount(customer)}"
+									style="display:#{customer.accountStatus == 'APPROVED' ? 'inline' : 'none'} ">
+									<div class="fasingleContainer" style="margin-top: 0px">
+									<i class="fa fa-money"></i>
+
+									</div>
+								</h:commandLink>
+
+
+
+								<h:commandLink title="Click to create an order"
+									rendered="#{request.isUserInRole('ACCOUNT_MANAGER')}"
+									action="#{channelOrderController.setChannelOrderSelectedAccount(customer)}"
+									value="" required="true" label="text"
+									style="min-width:100px;display:#{customer.accountStatus == 'APPROVED' ? 'inline' : 'none'}">
+									<div class="fasingleContainer" style="margin-top: 0px">
+										<i class="fa fa-clipboard"></i>
+									</div>
+								</h:commandLink>
+							</p:column>
+
+						</p:dataTable>
+					</h:panelGrid>
+				</p:tab>
+
+			</p:accordionPanel>
+
+			<p:dialog header="View Account" widgetVar="view" resizable="false"
+				id="viewDlg" draggable="false">
+				<h:form id="viewForm">
+					<h:outputText value="#{customer.accountName}" required="true"
+						label="text" />
+				</h:form>
+			</p:dialog>
+			<div class="btnContainer">
+				<h:commandLink action="#{accountController.createAccount()}"
+					value="Create new" class="btn btn-primary"
+					rendered="#{request.isUserInRole('ACCOUNT_MANAGER')}" />
+			</div>
+		</h:form>
+		<style>
+.ui-datatable table {
+	width: 930px
+}
+
+.fileupload-content {
+	width: 910px
+}
+
+#listContainers .ui-widget-header {
+	width: 910px
+}
+
+.ui-fileupload {
+	display: block;
+}
+</style>
+	</ui:define>
+</ui:composition>

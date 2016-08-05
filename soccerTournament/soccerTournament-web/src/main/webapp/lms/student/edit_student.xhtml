@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="content">
+		<h:form class="form-horizontal" role="form" prependId="false">
+
+			<h3>Student Details</h3>
+	
+			<h:panelGroup>
+				<table id="compDetails">
+					<tr>
+						<td valign="top">
+							
+								<label for="inputName" >Name</label>
+									<h:inputText type="text" class="form-control" id="inputName"
+										placeholder="Name"
+										value="#{studentController.student.studentName}" />
+									<p:message for="inputName" errorClass="invalid" />
+							
+						
+								<label for="vat" >Surname</label>
+									<h:inputText type="text" class="form-control" id="vat"
+                                        maxlength="10"
+										placeholder="Vat"
+										value="#{studentController.student.surname}" />
+									<p:message for="vat" errorClass="invalid" />
+							
+						</td>
+						<td>
+							
+								<label for="inputSerial" >Address</label>
+									<h:inputText type="text" class="form-control" id="inputSerial"
+										placeholder="Serial"
+										value="#{studentController.student.address}" />
+									<p:message for="inputSerial" errorClass="invalid" />
+									
+											<label for="regNumber">ID</label>
+						<p:inputMask type="text" styleClass="form-control" id="regNumber"
+							placeholder="RegNumber"
+							value="#{studentController.student.identifier}" /> <p:message
+							for="regNumber" errorClass="invalid" /> 
+						
+
+					</tr>
+
+				</table>
+
+			
+			</h:panelGroup>
+			<br/>
+			<div class="btnContainer">
+				<h:commandButton class="btn btn-primary"
+					action="#{accountController.displayConfirmation()}" value="Next">
+
+				</h:commandButton>
+				<a href="account_list.xhtml?faces-redirect=true" class="btn btn-primary">Back</a>
+			</div>
+
+		</h:form>
+		      <script type='text/javascript'> 
+         window.onload = function(){
+              var upfrontPayment = document.getElementById("upfrontPercentage").value;
+               var preShipmentPayment = document.getElementById("preShipmentPercentage").value;
+               
+                 var total  = parseInt(upfrontPayment) + parseInt(preShipmentPayment);
+                 if(total > 100)
+                     {
+                     document.getElementById("preShipmentPercentage").focus();
+                     document.getElementById("postShipmentPercentage").value = 0;
+                 
+                     alert("Please ensure that the total Upfront Percentage and PerShipment is less or equal to 100");   
+                     return false;     
+                     }else{              
+                         total  =100 - parseInt(total);
+                         document.getElementById("postShipmentPercentage").value = total;
+                           document.getElementById("postShipmentPercentage").disabled = true; 
+                         return true;
+                     }
+            }
+   
+   function calc(){
+     
+       var upfrontPayment = document.getElementById("upfrontPercentage").value;
+       var preShipmentPayment = document.getElementById("preShipmentPercentage").value;
+       
+         var total  = parseInt(upfrontPayment) + parseInt(preShipmentPayment);
+         if(total > 100)
+             {
+             document.getElementById("preShipmentPercentage").focus();
+             document.getElementById("postShipmentPercentage").value = 0;
+             alert("Please ensure that the total Upfront Percentage and PerShipment is less or equal to 100");   
+             return false;     
+             }else{              
+                 total  =100 - parseInt(total);
+                 document.getElementById("postShipmentPercentage").value = total;
+                   document.getElementById("postShipmentPercentage").disabled = true; 
+                 return true;
+             }
+  }
+  </script>
+	</ui:define>
+</ui:composition>

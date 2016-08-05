@@ -1,0 +1,17 @@
+1455005924928	Rename package 'com.service.model'
+1455006340077	Rename type 'AccountRepository'
+1455011999387	Rename type 'AccountStatus'
+1455120683105	Delete element
+1455120697760	Delete element
+1455133201545	Rename method 'findAllBooksByName'
+1455356264219	Copy compilation unit
+1455356372190	Copy compilation unit
+1455356507394	Copy compilation unit
+1455358142085	Rename method 'findAllShelf'
+1455358179958	Rename method 'getAllShelf'
+1455362171262	Copy compilation unit
+1455362240398	Copy compilation unit
+1455362281680	Copy compilation unit
+1455392015020	Copy file
+1455392068025	Rename resource 'couchdb.properties'
+1455392078211	Rename resource 'stuff.properties'

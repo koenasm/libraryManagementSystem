@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:a4j="http://richfaces.org/a4j">
+	<ui:define name="content">
+
+		<h:form id="shelfTableList" prependId="true"
+			enctype="multipart/form-data">
+			<br />
+			<h:commandLink styleClass="refresh fa fa-refresh" value=" Refresh"
+				action="#{#}"></h:commandLink>
+			<br />
+			<p:accordionPanel>
+				<p:tab title=" Shelf List">
+					<h:panelGrid columns="2" cellpadding="10">
+
+						<p:dataTable id="shelfTable"
+							value="#{shelfController.shelfList}" var="shlf"
+							styleClass="order-table" headerClass="order-table-header"
+							rowClasses="order-table-odd-row,order-table-even-row"
+							sortBy="#{shlf.shelfName}" paginator="true" rows="10">
+
+							<p:column headerText="Name"
+								sortBy="#{shlf.shelfName}">
+
+								<h:outputText value="#{shlf.shelfName}" required="true"
+									label="text" />
+							</p:column>
+							<p:column headerText="Area">
+
+								<h:outputText value="#{shlf.area}"
+									required="true" label="text"></h:outputText>
+
+							</p:column>
+							<p:column headerText="Capacity"
+								sortBy="#{shlf.capacity}">
+
+								<h:outputText value="#{shlf.capacity}" required="true"
+									label="text"></h:outputText>
+
+							</p:column>
+
+							<p:column headerText="Action" style="min-width:80px;">
+								<h:commandLink title="Click to Maintain"
+									action="#{shelfController.displaySelectedShelf(shlf)}"
+									value="">
+
+									<div class="fasingleContainer" style="margin-top: 0px">
+										<i class="fa fa-pencil-square-o"></i>
+									</div>
+								</h:commandLink>
+							</p:column>
+
+						</p:dataTable>
+					</h:panelGrid>
+				</p:tab>
+
+			</p:accordionPanel>
+
+			<div class="btnContainer">
+				<h:commandLink action="#{shelfController.createShelf()}"
+					value="Create new" class="btn btn-primary" />
+			</div>
+		</h:form>
+		<style>
+.ui-datatable table {
+	width: 930px
+}
+
+.fileupload-content {
+	width: 910px
+}
+
+#listContainers .ui-widget-header {
+	width: 910px
+}
+
+.ui-fileupload {
+	display: block;
+}
+</style>
+	</ui:define>
+</ui:composition>

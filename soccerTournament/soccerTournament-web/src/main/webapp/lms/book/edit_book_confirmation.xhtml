@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:p="http://java.sun.com/jsf/html"
+		xmlns:pf="http://primefaces.org/ui">
+	<ui:define name="content">
+		<h:form class="form-horizontal" role="form" prependId="false">
+
+
+			<h3>Account Details</h3>
+			<p>Account Number: #{accountController.account.accountNumber}</p>
+			<p>Account Status: #{accountController.account.accountStatus}</p>
+			<p:message for="rejectedReason" errorClass="invalid" />
+			<h:panelGroup rendered="#{accountController.account.reasons!=null }">
+				<div id="rejectedReasonBlock"
+					class="#{accountController.account.accountStatus}">
+
+					<h3 class="#{accountController.account.accountStatus}">This
+						account is in its current status for the following reasons:</h3>
+					<h:outputLabel styleClass="outLabel"
+						value="#{accountController.account.reasons}" />
+				</div>
+			</h:panelGroup>
+<p:message for="saveReason" errorClass="invalid" />
+<p:message for="approveReason" errorClass="invalid" />
+<p:message for="closeReason" errorClass="invalid" />
+<p:message for="rejectedReason" errorClass="invalid" />
+<p:message for="blockReason" errorClass="invalid" />
+<p:message for="unblockReason" errorClass="invalid" />
+
+			<h:panelGroup>
+				<table id="compDetails">
+					<tr>
+						<td valign="top"><label for="inputName">Name</label> <h:outputLabel
+								styleClass="outLabel" type="text" id="inputName"
+								placeholder="Name"
+								value=" : #{accountController.account.accountName}" /> <p:message
+								for="inputName" errorClass="invalid" /> <br /> <label for="vat">VAT Number </label> <h:outputLabel styleClass="outLabel" type="text"
+								id="vat" placeholder="Vat"
+								value=" : #{accountController.account.vatNumber}" /> <p:message
+								for="vat" errorClass="invalid" /></td>
+						<td valign="top"><label for="regNumber"> Registration Number</label>
+
+							<h:outputLabel styleClass="outLabel" type="text" id="regNumber"
+								placeholder="RegNumber"
+								value=" : #{accountController.account.companyRegNumber}" /> <p:message
+								for="regNumber" errorClass="invalid" /> <br /> <label
+							for="ricaDocs">RICA Documents</label>: <h:selectBooleanCheckbox id="ricaDocs" style="margin-left:5px"
+								disabled="true" placeholder="RicaDocs"
+								value="#{accountController.account.ricaDocs}" /> <h:outputText
+								value=" #{accountController.addressProofFile.fileName}" /> <h:outputText
+								value=" #{accountController.companyRegistrationfile.fileName}" />
+                                <br />
+                                
+                                <a  href="accounts_pdf.xhtml" target="_blank">View Documents </a>
+
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<h3
+								style="border-bottom: 1px solid; padding-bottom: 3px; text-align: center;">Delivery Address</h3> <label for="unit">Building Name and Number </label> <h:outputLabel
+								styleClass="outLabel" type="text" id="unit" placeholder="Unit"
+								value=": #{accountController.account.address.addressLineTwo}" />
+							<br /> <label for="poBox">Street Name and Number</label> <h:outputLabel
+								styleClass="outLabel" type="text" id="poBox" placeholder="PoBox"
+								value=": #{accountController.account.address.addressLineOne}" />
+
+							<br /> <label for="suburb">Suburb</label> <h:outputLabel
+								styleClass="outLabel" type="text" id="suburb"
+								placeholder="Suburb"
+								value=": #{accountController.account.address.suburb}" />
+						</td>
+						<td valign="top">
+							<h3 style="min-height: 32px"></h3> <label for="city">City</label> <h:outputLabel styleClass="outLabel" type="text" id="city"
+								placeholder="City"
+								value=": #{accountController.account.address.city}" /> <br />
+							<label for="postalCode">Postal Code</label> <h:outputLabel
+								styleClass="outLabel" type="text" id="postalCode"
+								placeholder="PostalCode"
+								value=": #{accountController.account.address.postalCode}" /> <br />
+							<label for="fancountry">Province</label>
+
+							<h:outputLabel styleClass="outLabel"
+								value=": #{accountController.account.address.province}" />
+						</td>
+					</tr>
+				</table>
+				<h3>Payment Terms</h3>
+
+				<table id="paymentDetails">
+					<tr>
+						<td valign="top"><label for="creditLimit">Credit
+								Limit </label> <h:outputLabel styleClass="outLabel" type="text"
+								id="creditLimit" placeholder="CreditLimit"
+								value=" : #{accountController.account.accPaymentTerms.creditLimit}" />
+							<p:message for="creditLimit" errorClass="invalid" /> <br /> <label
+							for="upfrontPercentage">Upfront Percentage</label> <h:outputLabel
+								styleClass="outLabel" type="text" id="upfrontPercentage"
+								placeholder="UpfrontPercentage"
+								value=" : #{accountController.account.accPaymentTerms.upfrontPercentage}" />
+
+						</td>
+						<td valign="top"><label for="preShipmentPercentage">
+								Pre-shipment Percentage </label> <h:outputLabel styleClass="outLabel"
+								type="text" id="preShipmentPercentage"
+								placeholder="PreShipmentPercentage"
+								value=" : #{accountController.account.accPaymentTerms.preShipmentPercentage}" />
+							<p:message for="preShipmentPercentage" errorClass="invalid" /> <br />
+							<label for="postShipmentPercentage">Post-shipment Percentage </label> <h:outputLabel styleClass="outLabel"
+								type="text" id="postShipmentPercentage"
+								placeholder="PostShipmentPercentage"
+								value=" : #{accountController.account.accPaymentTerms.postShipmentPercentage}" />
+
+							<br /> <label for="settlementDays">Settlement Days </label> <h:outputLabel
+								styleClass="outLabel" type="text" id="settlementDays"
+								placeholder="SettlementDays"
+								value=" : #{accountController.account.accPaymentTerms.settlementDays}" />
+						</td>
+					</tr>
+
+				</table>
+
+				<h3>Contact Details</h3>
+				<table id="compContactDetails">
+					<tr>
+						<td><h3>Finance</h3></td>
+						<td><h3>Deliveries</h3></td>
+					</tr>
+					<tr>
+						<td valign="top"><label for="inputFinaceName">First Name</label> <h:outputLabel styleClass="outLabel" type="text"
+								id="inputFinaceName" placeholder="Name"
+								value=" : #{accountController.account.financeContactDetails.firstName}" />
+							<br /> <label for="inputFinaceLastName">Last Name</label> <h:outputLabel
+								styleClass="outLabel" type="text" id="inputFinaceLastName"
+								placeholder="Name"
+								value=" : #{accountController.account.financeContactDetails.lastName}" />
+							<br /> <label for="emailFinance">Email </label> <h:outputLabel
+								styleClass="outLabel" type="email" id="emailFinance"
+								placeholder="Email"
+								value=" : #{accountController.account.financeContactDetails.emailAddress}" />
+							<p:message for="emailFinance" errorClass="invalid" /> <br /> <label
+							for="phoneNumberFinance">Phone Number</label> <h:outputLabel
+								styleClass="outLabel" type="tel" pattern="/^[0-9]{10}$/"
+								id="phoneNumberFinance" placeholder="contactNumber"
+								value=" : #{accountController.account.financeContactDetails.contactNumber}" />
+							<p:message for="phoneNumberFinance" errorClass="invalid" />
+                        </td>
+						<td valign="top"><label for="inputDeliveryName">First Name </label> 
+                            <h:outputLabel styleClass="outLabel" type="text"
+								id="inputDeliveryName" placeholder="Name"
+								value=" : #{accountController.account.deliveryContactDetails.firstName}" />
+							<h:outputLabel styleClass="outLabel" value=""></h:outputLabel> <br />
+                            
+							<label for="inputDeliveryLastName">Last Name </label>
+							<h:outputLabel styleClass="outLabel" type="text"
+								id="inputDeliveryLastName" placeholder="Name"
+								value=" : #{accountController.account.deliveryContactDetails.lastName}" />
+							<br /> <label for="emailDeleviries">Email </label> <h:outputLabel
+								styleClass="outLabel" type="email" id="emailDeleviries"
+								placeholder="Email" message="Please enter valid Email address"
+								value=" : #{accountController.account.deliveryContactDetails.emailAddress}" />
+							<p:message for="emailDeleviries" errorClass="invalid" /> <br />
+							<label for="phoneNumberDeleviries">Phone
+								Number</label> <h:outputLabel styleClass="outLabel" type="tel"
+								pattern="/^[0-9]{10}$/" id="phoneNumberDeleviries"
+								placeholder="contactNumber"
+								value=" : #{accountController.account.deliveryContactDetails.contactNumber}" />
+							<p:message for="phoneNumberDeleviries" errorClass="invalid" />
+                        </td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div style="float: right; padding: 5px">
+								<h:commandButton action="#{accountController.goBack()}"
+									value="Back" required="true" label="text"
+									class="btn btn-primary"></h:commandButton>
+
+								<h:panelGroup
+									rendered="#{accountController.account.accountStatus != 'APPROVED'}">
+									<h:commandButton
+										rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER') and (accountController.account.accountStatus == 'REJECTED' or accountController.account.accountStatus == 'PENDING') and accountController.account.ricaDocs=='true' }"
+										action="#{accountController.approveAnAccount()}"
+										value="Approve" required="true" label="text"
+										class="btn btn-primary"></h:commandButton>
+								</h:panelGroup>
+								<h:panelGroup
+									rendered="#{accountController.account.accountStatus != 'REJECTED' and (accountController.account.accountStatus == 'PENDING')}">
+									<a id="reject" style="width: 120px;" class="btn btn-primary"
+										data-toggle="modal" data-target="#rejectModal">Reject</a>
+								</h:panelGroup>
+								<h:panelGroup
+									rendered="#{accountController.account.accountStatus == 'APPROVED'}">
+									<a id="block" style="width: 120px;"
+										class="btn btn-primary approve" data-toggle="modal"
+										data-target="#blockModal">Block</a>
+								</h:panelGroup>
+								<h:panelGroup
+									rendered="#{accountController.account.accountStatus == 'BLOCKED'}">
+									<a id="close" style="width: 120px;"
+										class="btn btn-primary approve" data-toggle="modal"
+										data-target="#closeModal">Close</a>
+								</h:panelGroup>
+								<h:panelGroup
+									rendered="#{accountController.account.accountStatus == 'CLOSED'}">
+									<a
+										style="width:120px ; display:#{request.isUserInRole('SUPER_USER') ? 'inline' : 'none' }"
+										class="btn btn-primary approve" data-toggle="modal"
+										data-target="#closeModal">Reopen</a>
+								</h:panelGroup>
+
+								<h:panelGroup
+									rendered="#{accountController.account.accountStatus == 'BLOCKED'}">
+									<a
+										style="width:120px ; display:#{request.isUserInRole('FINANCIAL_CONTROLLER') ? 'inline' : 'none' }"
+										class="btn btn-primary approve" data-toggle="modal"
+										data-target="#unblockModal">Unblock</a>
+								</h:panelGroup>
+								<a id="save" class="btn-primary"
+									data-toggle="modal" data-target="#detailsChangeModal">Save</a>
+
+								<h:commandButton onclick="print()" value="Print"
+									styleClass="btn-primary"></h:commandButton>
+
+							</div>
+
+						</td>
+					</tr>
+				</table>
+
+			</h:panelGroup>
+			<!-- Modal -->
+
+
+
+		</h:form>
+		<div class="modal fade" id="rejectModal" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="padding: 10px; width: 520px">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">X</button>
+
+						<h4 class="modal-title" id="myModalLabel">Reasons for
+							rejection</h4>
+					</div>
+
+					<div class="modal-body">Please provide reasons for rejecting
+						this Account!</div>
+					<h:form>
+						<p:message for="rejectedReason" errorClass="invalid" />
+
+						<h:inputTextarea required="true" id="rejectedReason"
+							requiredMessage="Reasons for rejecting an account must be provided"
+							value="#{accountController.account.reasons}" rows="10"
+							style="width:500px" immediate="true" />
+
+						<div class="modal-footer">
+							<h:commandButton update="grid"
+								rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER')}"
+								action="#{accountController.rejectAnAccount()}" value="Reject"
+								class="btn btn-primary"></h:commandButton>
+						</div>
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="blockModal" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="padding: 10px; width: 520px">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">X</button>
+
+						<h4 class="modal-title" id="myModalLabel">Reasons for
+							blocking the account</h4>
+					</div>
+
+					<div class="modal-body">Please provide reasons for blocking
+						this Account!</div>
+					<h:form>
+						<p:message for="blockReason" errorClass="invalid" />
+						<h:inputTextarea required="true" id="blockReason"
+							requiredMessage="Reasons for blocking an account must be provided"
+							value="#{accountController.account.reasons}" rows="10"
+							style="width:500px" immediate="true" />
+
+						<div class="modal-footer">
+							<h:commandButton update="grid"
+								rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER')}"
+								action="#{accountController.deleteAnAccount()}" value="Block"
+								class="btn btn-primary">
+							</h:commandButton>
+						</div>
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal fade" id="unblockModal" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="padding: 10px; width: 520px">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">X</button>
+
+						<h4 class="modal-title" id="myModalLabel">Reasons for
+							unblocking the account</h4>
+					</div>
+
+					<div class="modal-body">Please provide reasons for unblocking
+						this Account!</div>
+					<h:form>
+						<p:message for="unblockReason" errorClass="invalid" />
+						<h:inputTextarea required="true" id="unblockReason"
+							requiredMessage="Reasons for unblocking an account must be provided"
+							value="#{accountController.account.reasons}" rows="10"
+							style="width:500px" immediate="true" />
+
+						<div class="modal-footer">
+							<h:commandButton update="grid"
+								rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER')}"
+								action="#{accountController.approveAnAccount()}" value="unblock"
+								class="btn btn-primary">
+							</h:commandButton>
+						</div>
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal fade" id="closeModal" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="padding: 10px; width: 520px">
+					<h:panelGroup
+						rendered="#{accountController.account.accountStatus != 'CLOSED'}">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">X</button>
+
+							<h4 class="modal-title" id="myModalLabel">Reasons for
+								closing the account</h4>
+						</div>
+
+						<div class="modal-body">Please provide reasons for closing
+							this Account!</div>
+
+
+						<h:form>
+							<p:message for="closeReason" errorClass="invalid" />
+							<h:inputTextarea required="true" id="closeReason"
+								requiredMessage="Reasons for closing an account must be provided"
+								value="#{accountController.account.reasons}" rows="10"
+								style="width:500px" immediate="true" />
+
+							<div class="modal-footer">
+								<h:commandButton update="grid"
+									action="#{accountController.closeAnAccount()}" value="Close"
+									class="btn btn-primary"></h:commandButton>
+							</div>
+						</h:form>
+					</h:panelGroup>
+
+
+					<h:panelGroup
+						rendered="#{accountController.account.accountStatus == 'CLOSED'}">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">X</button>
+
+							<h4 class="modal-title" id="myModalLabel">Reasons for
+								re-opening the account</h4>
+						</div>
+
+						<div class="modal-body">Please provide reasons for
+							re-opening this Account!</div>
+
+
+						<h:form>
+							<p:message for="approveReason" errorClass="invalid" />
+							<h:inputTextarea required="true" id="approveReason"
+								requiredMessage="Reasons for re-opening  an account must be provided"
+								value="#{accountController.account.reasons}" rows="10"
+								style="width:500px" immediate="true" />
+
+							<div class="modal-footer">
+								<h:commandButton update="grid"
+									action="#{accountController.approveAnAccount()}"
+									value="Re-Open" class="btn btn-primary"></h:commandButton>
+							</div>
+						</h:form>
+					</h:panelGroup>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="detailsChangeModal" tabindex="-1"
+			role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="padding: 10px; width: 520px">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">X</button>
+
+						<h4 class="modal-title" id="myModalLabel">Reasons for
+							changing the account</h4>
+					</div>
+
+					<div class="modal-body">Please provide a list of what has
+						been changed!</div>
+					<h:form>
+						<p:message for="saveReason" errorClass="invalid" />
+						<h:inputTextarea required="true" id="saveReason"
+							requiredMessage="Reasons for changing an account must be provided"
+							value="#{accountController.account.reasons}" rows="10"
+							style="width:500px" immediate="true" />
+						<br />
+						<div class="modal-footer">
+							<h:commandButton
+								action="#{accountController.updateAccountDetails()}"
+								value="Save" class="btn btn-primary" />
+						</div>
+					</h:form>
+
+				</div>
+			</div>
+		</div>
+		
+		
+	
+		<style>
+#save {
+	display: #{request.isUserInRole('ACCOUNT_MANAGER')?  'inline': 'none'
+}
+
+}
+#block {
+	display: #{accountController.account.accountStatus== 'APPROVED' and request.isUserInRole('FINANCIAL_CONTROLLER')?'inline': 'none'
+}
+
+}
+#reject {
+	display: #{request.isUserInRole('FINANCIAL_CONTROLLER')? 'inline':  'none'
+}
+
+}
+#close {
+	display: #{request.isUserInRole('FINANCIAL_CONTROLLER')? 'inline':  'none'
+}
+
+}
+@media print {
+	.btn {
+		display: none;
+	}
+	#block,#close,#reject,#save {
+		display: none;
+	}
+}
+
+.btn btn-primary {
+	width: 82px;
+}
+
+td,th {
+	border: 1px solid;
+	padding: 0;
+}
+
+td {
+	padding-left: 2px;
+}
+
+.col-sm-10 {
+	margin-top: 10px;
+}
+
+.form-group {
+	width: 491px;
+}
+
+#lighbox3_panel{
+
+</style>
+
+	</ui:define>
+</ui:composition>

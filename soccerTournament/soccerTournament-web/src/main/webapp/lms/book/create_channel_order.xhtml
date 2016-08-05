@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="content">
+
+
+		<table>
+			<tr>
+				<td valign="top"
+					style="border-right: 1px solid #ccc; padding-right: 0px"><h:form
+						class="form-horizontal" role="form" prependId="false">
+						<h3>Templates</h3>
+						<ui:repeat id="templateTable"
+							value="#{phoneTemplateController.getAccountTemplateList(channelOrderController.selectedAccount)}"
+							var="template">
+
+							<h:commandLink
+								action="#{channelOrderController.createOrder(template)}"
+								value="#{template.templateName}" />
+							<br />
+
+
+						</ui:repeat>
+						<br />
+						<h:commandLink class="btn btn-primary"
+							action="#{phoneTemplateController.setTemplateSelectedAccount(channelOrderController.selectedAccount,true)}"
+							value="Create Template" />
+						<h:panelGroup
+							rendered="#{channelOrderController.templateList.size() == 0}">
+
+						</h:panelGroup>
+					</h:form></td>
+				<td
+					style="background: none repeat scroll 0 0 #fff; padding-left: 5px; padding-right: 20px;">
+					<h:form>
+						<h3>Order form for
+							#{channelOrderController.selectedAccount.accountName}</h3>
+
+
+						<table id="ChanOrderDetails" width="765px">
+							<tr>
+								<td>
+									<h3>Delivery Address</h3>
+
+								</td>
+
+								<td>
+									<h3>Contact Details</h3>
+
+								</td>
+							</tr>
+							<tr>
+								<td style="padding-left: 2px;"><h:form
+										class="form-horizontal" role="form" prependId="false">
+
+										<label>Building Name and Number</label>
+										<h:outputLabel styleClass="outLabel"
+											value=" : #{channelOrderController.selectedAccount.address.addressLineTwo}"></h:outputLabel>
+										<br />
+										<label>Street Name and Number</label>
+										<h:outputLabel styleClass="outLabel"
+											value=" : #{channelOrderController.selectedAccount.address.addressLineOne}"></h:outputLabel>
+										<br />
+										<label>Suburb</label>
+										<h:outputLabel styleClass="outLabel"
+											value=" : #{channelOrderController.selectedAccount.address.suburb}"></h:outputLabel>
+										<br />
+										<label>City</label>
+										<h:outputLabel styleClass="outLabel"
+											value=" : #{channelOrderController.selectedAccount.address.city}"></h:outputLabel><br/>
+										
+										
+										<label>Province</label>
+										<h:outputLabel styleClass="outLabel"
+											value=" : #{channelOrderController.selectedAccount.address.province}"></h:outputLabel>
+										<br />
+										<label>Postal code</label>
+										<h:outputLabel styleClass="outLabel"
+											value=" : #{channelOrderController.selectedAccount.address.postalCode}"></h:outputLabel>
+
+									</h:form></td>
+
+								<td valign="top" style="padding-right: 2px"><label>First
+										name</label> <h:outputLabel styleClass="outLabel"
+										value=" : #{channelOrderController.selectedAccount.deliveryContactDetails.firstName}"></h:outputLabel>
+									<br /> <label>Last name</label> <h:outputLabel
+										styleClass="outLabel"
+										value=" : #{channelOrderController.selectedAccount.deliveryContactDetails.lastName}"></h:outputLabel>
+									<br /> <label>Contact number</label> <h:outputLabel
+										styleClass="outLabel"
+										value=" : #{channelOrderController.selectedAccount.deliveryContactDetails.contactNumber}"></h:outputLabel>
+									<br /> <label>Email</label> <h:outputLabel
+										styleClass="outLabel"
+										value=" : #{channelOrderController.selectedAccount.deliveryContactDetails.emailAddress}"></h:outputLabel>
+
+								</td>
+
+
+							</tr>
+							<tr>
+								<td valign="top" style="border-right: none"><h:panelGroup
+										rendered="#{channelOrderController.phoneSpec != null}">
+										<h3 style="margin-top: 35px">Template name:
+											#{channelOrderController.phoneSpec.templateName}</h3>
+
+
+										<h3 style="margin-top: -5px">Phone name:
+											#{channelOrderController.phoneSpec.recommendedPhoneName}</h3>
+
+									</h:panelGroup> <h:outputLabel
+										value="Please select a template before creating an order"
+										rendered="#{channelOrderController.phoneSpec == null }"
+										style="font-size:18px;color:red;max-width: 365px;margin-top: 35px" />
+									<h:panelGroup
+										rendered="#{channelOrderController.phoneSpec != null and channelOrderController.phoneSpec.twoSidedDesign ==false}">
+										<div class="device"
+											style="background-image: url(../print/template/#{channelOrderController.phoneSpec.recommendedDesign}.jpg); background-color: #{channelOrderController.phoneSpec.recommendedColour};  background-size: 100% auto;">
+											<div class="deviceFront">
+												<div
+													class="deviceFront-buttons button#{channelOrderController.phoneSpec.recommendedkeyBoardLayout}">
+													<div
+														class=" deviceFront button2vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==2} &amp; phone.addVoiceMailButton, button4vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==4}, &amp; phone.addVoiceMailButton, button8vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==8}, &amp; phone.addVoiceMailButton, button12vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==12}, &amp; phone.addVoiceMailButton}">
+														<div
+															class="deviceFront {button2alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==2}, &amp; phone.addPanicButton, button4alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==4}, &amp; phone.addPanicButton, button8alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==8}, &amp; phone.addPanicButton, button12alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==12}, &amp; phone.addPanicButton}">
+															<div>
+																<h:panelGroup layout="block" id="categoryList"
+																	rendered="#{channelOrderController.phoneSpec.printNameOnFront==true}">
+																	<div class="phone-name">
+																		&#160; <span
+																			style="color: #{channelOrderController.phoneSpec.recommendedColour}">#{channelOrderController.phoneSpec.recommendedPhoneName}</span>
+
+																	</div>
+																</h:panelGroup>
+																<ui:repeat var="num"
+																	value="#{channelOrderController.phoneSpec.recommendedKeyNumbers}"
+																	varStatus="indx">
+																	<div id="buttons"
+																		class="button-name keyboard#{channelOrderController.phoneSpec.recommendedkeyBoardLayout}-button#{indx.index +1}">
+																		<h:outputLabel value="#{num.name}"
+																			rendered="#{channelOrderController.phoneSpec.printNameOnFront==true}" />
+																		<h:outputLabel value="#{num.name}"
+																			rendered="#{channelOrderController.phoneSpec.printNameOnFront==false}"
+																			style="height: 30px;margin-top: 22px;" />
+																	</div>
+																</ui:repeat>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</h:panelGroup> <h:panelGroup
+										rendered="#{channelOrderController.phoneSpec != null and channelOrderController.phoneSpec.twoSidedDesign ==false}">
+										<div class="device"
+											style="background-image: url(../print/template/#{channelOrderController.phoneSpec.recommendedDesign}.jpg); background-color: #{channelOrderController.phoneSpec.recommendedColour};float: right;
+    margin-right: -50px;
+    margin-top: -313px;
+                                             background-size: 200px;">
+											<div class="deviceFrontNoButton"></div>
+										</div>
+									</h:panelGroup>
+
+
+									<div style="max-height: 250px">
+										<h:panelGroup
+											rendered="#{channelOrderController.phoneSpec != null and channelOrderController.phoneSpec.twoSidedDesign ==true}">
+											<div class="device"
+												style="background-image: url(../print/template/#{channelOrderController.phoneSpec.recommendedDesign}-Front.jpg); background-color: #{channelOrderController.phoneSpec.recommendedColour};
+                                             background-size: 200px;">
+											<h:panelGroup  rendered="#{channelOrderController.phoneSpec.buttonsInDesign}">
+                                            	 <div class="deviceFrontNoButton"></div>
+                                             </h:panelGroup>
+                                             
+											<h:panelGroup  rendered="#{!channelOrderController.phoneSpec.buttonsInDesign}">
+												<div class="deviceFront">
+													<div
+														class="deviceFront-buttons button#{channelOrderController.phoneSpec.recommendedkeyBoardLayout}">
+														<div
+															class=" deviceFront button2vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==2} &amp; phone.addVoiceMailButton, button4vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==4}, &amp; phone.addVoiceMailButton, button8vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==8}, &amp; phone.addVoiceMailButton, button12vmail: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==12}, &amp; phone.addVoiceMailButton}">
+															<div
+																class="deviceFront {button2alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==2}, &amp; phone.addPanicButton, button4alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==4}, &amp; phone.addPanicButton, button8alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==8}, &amp; phone.addPanicButton, button12alert: #{channelOrderController.phoneSpec.recommendedkeyBoardLayout==12}, &amp; phone.addPanicButton}">
+																<div>
+																	<h:panelGroup layout="block" id="fonename"
+																		rendered="#{channelOrderController.phoneSpec.printNameOnFront==true}">
+																		<div class="phone-name">
+																			&#160; <span
+																				style="color: #{channelOrderController.phoneSpec.recommendedPhoneNameColour}">#{channelOrderController.phoneSpec.recommendedPhoneName}</span>
+
+																		</div>
+																	</h:panelGroup>
+
+																	<h:panelGroup
+																		rendered="#{channelOrderController.phoneSpec.buttonsInDesign==false}">
+																		<ui:repeat var="num"
+																			value="#{channelOrderController.phoneSpec.recommendedKeyNumbers}"
+																			varStatus="indx">
+																			<div id="buttons"
+																				class="button-name keyboard#{channelOrderController.phoneSpec.recommendedkeyBoardLayout}-button#{indx.index +1}">
+																				<h:outputLabel value="#{num.name}"
+																					rendered="#{channelOrderController.phoneSpec.printNameOnFront==true}" />
+																				<h:outputLabel value="#{num.name}"
+																					rendered="#{channelOrderController.phoneSpec.printNameOnFront==false}"
+																					style="height: 30px;margin-top: 22px;" />
+																			</div>
+																		</ui:repeat>
+																	</h:panelGroup>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</h:panelGroup>
+											</div>
+										</h:panelGroup>
+
+										<h:panelGroup
+											rendered="#{channelOrderController.phoneSpec != null and channelOrderController.phoneSpec.twoSidedDesign ==true}">
+											<div class="device"
+												style="background-image: url(../print/template/#{channelOrderController.phoneSpec.recommendedDesign}-Back.jpg); background-color: #{channelOrderController.phoneSpec.recommendedColour};float: right;
+    margin-right: -50px;
+    margin-top: -313px;
+                                             background-size: 200px;">
+												<div class="deviceFrontNoButton"></div>
+											</div>
+										</h:panelGroup>
+									</div></td>
+								<td valign="top" align="center" style="border-left: none">
+									<div style="margin-top: 33px">
+										<div style="width: 200px">
+											<label style="height: 15px;">Preferred Delivery Date</label>
+
+											<p:calendar id="popup" required="true" immediate="false"
+												mindate="#{channelOrderController.prefferedDate}"
+												value="#{channelOrderController.channelOrder.preferredDeliveryDate}"
+												requiredMessage=" Please select preferred delivery date" />
+										</div>
+										
+
+										<div>
+											<label for="cusPurchaseOrder">Customer Purchase Order</label>
+											<div>
+												<h:inputText type="number" class="form-control"
+													id="cusPurchaseOrder" placeholder="cusPurchaseOrder"
+													value="#{channelOrderController.channelOrder.customerPO}" />
+											</div>
+
+										</div>
+									
+
+									
+										<div>
+											<label for="totalNumPhones" style="margin-left: -30px;">Number of Phones</label>
+											<div>
+												<h:inputText type="number" class="form-control"
+													id="totalNumPhones" placeholder="totalNumPhones"
+													value="#{channelOrderController.channelOrder.orderedPhones}" />
+											</div>
+
+										</div>
+										<div>
+											<br /> <label>Client provides SIMs</label>
+											<span id="date"></span>
+											<h:selectBooleanCheckbox style="margin-left:15px"
+												value="#{channelOrderController.channelOrder.cleintProvidesSim}" />
+										</div>
+
+
+										<p:message for="totalNumPhones" errorClass="invalid"
+											showDetail="false" showSummary="true" />
+
+									</div>
+								</td>
+							</tr>
+						</table>
+						<br />
+						<p:messages id="messages" showDetail="false" autoUpdate="true"
+							closable="true" />
+
+						<div class="btnContainer">
+
+							<h:commandLink styleClass="btn btn-primary"
+								rendered="#{channelOrderController.phoneSpec != null}"
+								action="channel_order_confirmation" value="Preview">
+							</h:commandLink>
+
+							<h:button outcome="/account/account_list.xhtml?faces-redirect=true" value="Back"
+								class="btn btn-primary" />
+
+
+						</div>
+
+					</h:form>
+				</td>
+			</tr>
+		</table>
+
+
+		<style>
+td,th {
+	border: 1px solid #646263;
+	padding: 5px;
+	width: 464px;
+}
+
+.ui-datepicker table {
+	width: -1%;
+}
+
+.ui-datepicker table th {
+	width: 23px;
+}
+
+.form-control {
+	margin-top: -15px;
+	width: 173px;
+}
+
+.labels {
+	border-bottom: 1px solid #656263;
+	min-width: 365px;
+}
+
+.button-name {
+	line-height: 12px;
+}
+
+.affix {x
+	
+}
+</style>
+	</ui:define>
+</ui:composition>

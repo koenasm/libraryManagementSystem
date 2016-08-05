@@ -1,0 +1,531 @@
+!SESSION 
+
+This is a continuation of log file /Users/macbook/Documents/advancedTechnologiesWorkspace/.metadata/.plugins/org.jboss.ide.eclipse.as.core/WildFly__9.x_1453567106138/log.bak_0
+Created Time: 2016-02-14 10:31:32.816
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:31:32.817
+!MESSAGE Incremental publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.817
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-web.war/lms/staff/edit_staff..xhtml. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:31:32.833
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.833
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.833
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:32.833
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:31:34.052
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.052
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.052
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.052
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.052
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:31:34.068
+!MESSAGE Incremental publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:31:34.068
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-web.war/lms/staff/edit_staff..xhtml. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:32:21.919
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:21.919
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:21.919
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:21.919
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:21.919
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:32:22.692
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:22.692
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:22.692
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:22.692
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:22.692
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:22.692
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:22.692
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:22.692
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:32:29.177
+!MESSAGE Incremental publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:29.177
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-ejb.jar/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:29.177
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-ejb.jar/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:29.177
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-ejb.jar/META-INF/maven/com.soccerTournament/soccerTournament-ejb. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:29.177
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-ejb.jar/META-INF/maven/com.soccerTournament. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:29.177
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-ejb.jar/META-INF/maven. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:32:29.177
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-ejb.jar/META-INF/MANIFEST.MF. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:46:12.455
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.455
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.455
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.455
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.455
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:46:12.559
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.559
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.559
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.559
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.559
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.559
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.559
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.559
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 10:46:12.570
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.570
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.570
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 10:46:12.570
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:34:23.865
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.865
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.865
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.865
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.865
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:34:23.951
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.951
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.951
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.951
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.951
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.951
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.951
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.951
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:34:23.962
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.962
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.962
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:23.962
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:34:25.193
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:25.193
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:25.193
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:25.193
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:25.193
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:34:25.207
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:25.207
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:25.207
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:34:25.207
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:35:31.033
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.033
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.033
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.033
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.033
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:35:31.096
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.097
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.097
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.097
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.097
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 17:35:31.139
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.139
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.139
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 17:35:31.139
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 18:08:48.557
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:48.557
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:48.557
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:48.557
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:48.557
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 18:08:49.533
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:49.533
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:49.533
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:49.533
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:49.533
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 18:08:49.567
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:49.567
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:49.567
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:08:49.567
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 18:11:18.840
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:18.840
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:18.840
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:18.840
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:18.840
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 18:11:19.683
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:19.683
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:19.683
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:19.683
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:19.683
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 18:11:19.728
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:19.729
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:19.729
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:11:19.729
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 18:44:19.373
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:44:19.373
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:44:19.373
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:44:19.373
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 18:44:19.373
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 21:55:56.004
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.004
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.004
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.004
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.004
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 21:55:56.131
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.131
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.131
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.131
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.131
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.131
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.131
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.131
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 21:55:56.230
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.230
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.230
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:55:56.230
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 21:57:08.498
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.498
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.498
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.498
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.498
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 21:57:08.556
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.556
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.556
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.556
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.556
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.556
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.556
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.556
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-02-14 21:57:08.571
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.571
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.571
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-02-14 21:57:08.571
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-02-14 22:18:58.013
+!MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 13:02:48.236
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:48.236
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:48.236
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:48.236
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:48.236
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 13:02:50.386
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.386
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.386
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.386
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.386
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.386
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.386
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.386
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 13:02:50.751
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.751
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.751
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:02:50.751
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-07-28 13:02:52.040
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-07-28 13:03:11.634
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 13:04:22.601
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:22.601
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:22.601
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:22.601
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:22.601
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 13:04:23.877
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.877
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.877
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.877
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.877
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.877
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.877
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.877
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 13:04:23.936
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.936
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.937
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 13:04:23.937
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2016-07-28 14:40:55.402
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2016-07-28 14:40:56.782
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 14:40:57.353
+!MESSAGE Full publish failed for module soccerTournament-ear
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:57.353
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:57.353
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/application.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:57.353
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:57.353
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ear/target/m2e-wtp/ear-resources/META-INF/maven/com.soccerTournament/soccerTournament-ear/pom.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 14:40:59.586
+!MESSAGE Full publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.586
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.586
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.586
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/m2e-wtp/web-resources/META-INF/maven/com.soccerTournament/soccerTournament-web/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.586
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/controller/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.586
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/soccer/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.586
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/com/.DS_Store
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.586
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-web/target/classes/.DS_Store
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-28 14:40:59.913
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.913
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.913
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-28 14:40:59.913
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-07-28 14:41:00.160
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-07-28 14:41:23.333
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-31 19:31:02.882
+!MESSAGE Incremental publish failed for module soccerTournament-web
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-31 19:31:02.882
+!MESSAGE Could not delete /Applications/wildfly-9.0.2.Final/standalone/deployments/soccerTournament-ear-0.0.1-SNAPSHOT.ear/soccerTournament-web.war/META-INF/MANIFEST.MF. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-07-31 19:31:03.205
+!MESSAGE Full publish failed for module soccerTournament-ejb
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-31 19:31:03.205
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.properties
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-31 19:31:03.205
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/maven/com.soccerTournament/soccerTournament-ejb/pom.xml
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-07-31 19:31:03.205
+!MESSAGE Error reading file /Users/macbook/Documents/advancedTechnologiesWorkspace/soccerTournament/soccerTournament-ejb/target/classes/META-INF/MANIFEST.MF
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-07-31 19:31:06.303
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-07-31 19:31:25.913
+!MESSAGE Server Startup Succeeded

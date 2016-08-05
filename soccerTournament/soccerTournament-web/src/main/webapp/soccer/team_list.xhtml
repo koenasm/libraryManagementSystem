@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:a4j="http://richfaces.org/a4j">
+	<ui:define name="content">
+
+		<h:form id="customerTableList" prependId="true"
+			enctype="multipart/form-data">
+			<br />
+
+			<br />
+			<p:accordionPanel>
+				<p:tab title=" Team List">
+					<h:panelGrid columns="2" cellpadding="10">
+
+						<p:dataTable id="teamTable" value="#{footballController.teamList}"
+							var="team" styleClass="order-table"
+							headerClass="order-table-header"
+							rowClasses="order-table-odd-row,order-table-even-row"
+							sortBy="#{team.teamName}" paginator="true" rows="10">
+
+							<p:column headerText="Team" sortBy="#{team.teamName}">
+								<h:outputText value="#{team.teamName}" required="true"
+									label="text" />
+							</p:column>
+							<p:column headerText="Points" sortBy="#{team.teamName}">
+								<h:outputText value="#{team.points}" required="true"
+									label="text"></h:outputText>
+							</p:column>
+
+							<p:column headerText="Wins">
+								<h:outputText value="#{0}"
+									required="true" label="text"></h:outputText>
+							</p:column>
+
+							<p:column headerText="WinsOvertime">
+								<h:outputText value="#{0}"
+									required="true" label="text"></h:outputText>
+							</p:column>
+
+							<p:column headerText="Loses">
+								<h:outputText value="#{0}"
+									required="true" label="text"></h:outputText>
+							</p:column>
+
+							<p:column headerText="Loses over time">
+								<h:outputText value="#{0}"
+									required="true" label="text"></h:outputText>
+							</p:column>
+
+							<p:column headerText="Goals">
+								<h:outputText value="#{0}"
+									required="true" label="text"></h:outputText>
+							</p:column>
+
+
+
+
+						</p:dataTable>
+
+
+					</h:panelGrid>
+				</p:tab>
+
+			</p:accordionPanel>
+
+	
+		</h:form>
+		<style>
+.ui-datatable table {
+	width: 930px
+}
+
+.fileupload-content {
+	width: 910px
+}
+
+#listContainers .ui-widget-header {
+	width: 910px
+}
+
+.ui-fileupload {
+	display: block;
+}
+</style>
+	</ui:define>
+</ui:composition>

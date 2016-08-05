@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
+<fullyQualifiedTypeName name="javax.enterprise.context.RequestScoped"/>
+<fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
+<fullyQualifiedTypeName name="javax.inject.Named"/>
+<fullyQualifiedTypeName name="javax.faces.bean.RequestScoped"/>
+<fullyQualifiedTypeName name="javax.xml.bind.JAXBContext"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="javax.xml.bind.JAXBException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlElement"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
+<fullyQualifiedTypeName name="com.soccer.model.Teams"/>
+<fullyQualifiedTypeName name="com.soccer.model.Game"/>
+<fullyQualifiedTypeName name="com.soccer.model.Team"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="com.soccer.model.Penalties"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="org.custommonkey.xmlunit.DetailedDiff"/>
+<fullyQualifiedTypeName name="com.soccer.model.Goal"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.soccer.model.Goals"/>
+<fullyQualifiedTypeName name="com.soccer.controller.FootballController"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.lms.model.BookStatus"/>
+<fullyQualifiedTypeName name="org.lightcouch.CouchDbClient"/>
+<fullyQualifiedTypeName name="org.lightcouch.Response"/>
+<fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+<fullyQualifiedTypeName name="javax.enterprise.context.Dependent"/>
+<fullyQualifiedTypeName name="com.lms.data.ShelfRepository"/>
+<fullyQualifiedTypeName name="com.lms.service.ShelfService"/>
+<fullyQualifiedTypeName name="com.lms.model.Shelf"/>
+<fullyQualifiedTypeName name="com.lms.data.StudentRepository"/>
+<fullyQualifiedTypeName name="com.lms.service.StudentService"/>
+<fullyQualifiedTypeName name="com.lms.model.Student"/>
+<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+<fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

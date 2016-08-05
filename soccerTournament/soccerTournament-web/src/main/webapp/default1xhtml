@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>eeziFone - it's easy. it's a phone.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet"
+		href="#{request.contextPath}/shares/css/bootstrap-3.1.1.min.css" />
+
+	<script src="#{request.contextPath}/shares/js/bootstrap-3.1.1.min.js"></script>
+
+	<link rel="stylesheet"
+		href="#{request.contextPath}/shares/css/screen.css" />
+	<link rel="stylesheet"
+		href="#{request.contextPath}/shares/css/font-awesome-4.0.3.min.css" />
+
+
+</h:head>
+<h:body style="margin:auto;color:#656263;background:#fff">
+
+	<!--begin header-->
+	<div id="header" class="blueBack"
+		style="height: 63px; margin-top: -11px; position: fixed; width: 100%; z-index: 101">
+		<a class="logoLink" href="#{request.contextPath}/landing_page.xhtml"
+			target="_parent"><img id="logo"
+			src="#{request.contextPath}/shares/brand/images/eeziFone.png"
+			alt="eeziFone" /></a> <a class="logoLinkPrint"><img id="logo"
+			src="#{request.contextPath}/shares/brand/images/eeziFone.png"
+			alt="eeziFone" /></a>
+
+		<div class="navbar navbar-inverse  blueBack"
+			style="display:#{request.getUserPrincipal()!=null ? 'block' : 'none'};margin-left: 352px;
+    margin-top: -47px; ">
+
+			<h:form>
+
+				<p:menubar autoDisplay="false" style="z-index:10;">
+
+					<p:submenu label="Accounts"
+						rendered="#{request.isUserInRole('ACCOUNT_MANAGER') or request.isUserInRole('FINANCIAL_CONTROLLER')}">
+						<p:menuitem value="View List" url="/account/account_list.xhtml" />
+
+					</p:submenu>
+					<p:submenu label="Orders"
+						rendered="#{request.isUserInRole('ACCOUNT_MANAGER') or request.isUserInRole('FINANCIAL_CONTROLLER') }">
+						<p:menuitem value="Channel"
+							url="/channelOrder/channel_order_list.xhtml"
+							rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER') or request.isUserInRole('ACCOUNT_MANAGER')  }" />
+
+
+						<p:menuitem value="Consumer"
+							url="/consumerOrder/consumer_order_list.xhtml"
+							rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER') }" />
+						<p:menuitem value="Purchase"
+							rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER')}"
+							outcome="/purchaseOrder/capture_purchase_details.xhtml" />
+
+
+					</p:submenu>
+
+					<p:submenu label="Campaigns"
+						rendered="#{request.isUserInRole('FINANCIAL_CONTROLLER')}">
+						<p:menuitem value="Manage Campaigns"
+							action="#{campaignController.getAllCampaigns()}" />
+
+					</p:submenu>
+					<p:submenu label="Contracts"
+						rendered="#{request.isUserInRole('ACCOUNT_MANAGER') or request.isUserInRole('FINANCIAL_CONTROLLER')}">
+						<p:menuitem value="Send Contract Email"
+							action="#{phoneConfigurationController.triggerContractPhoneEmail()}" />
+
+					</p:submenu>
+
+
+					<p:submenu label="Stock Maintenance"
+						rendered="#{request.isUserInRole('STOCK_ADMINSTRATOR')}">
+
+						<p:menuitem value="Upload "
+							action="#{stockUploadController.initializePurchaseOrder()}" />
+
+					</p:submenu>
+
+					<p:submenu label="Channel"
+						rendered="#{request.isUserInRole('STOCK_ADMINSTRATOR')}">
+						<p:menuitem value="Issue"
+							outcome="/stock/work_instruction_stock_list.xhtml" />
+						<p:menuitem value="Returns"
+							outcome="/stock/completed_instruction_list.xhtml" />
+						<p:menuitem value="Update Tracking Reference"
+							url="/stock/completed_orders_list.xhtml"
+							rendered="#{request.isUserInRole('STOCK_ADMINSTRATOR')}" />
+					</p:submenu>
+
+					<p:submenu label="Consumer"
+						rendered="#{request.isUserInRole('STOCK_ADMINSTRATOR')}">
+						<p:menuitem value="Issue"
+							outcome="/stock/consumer_instruction_stock_list.xhtml" />
+						<p:menuitem value="Returns"
+							outcome="/stock/consumer_completed_instruction_list.xhtml" />
+						<p:menuitem value="Update Tracking Reference"
+							url="/stock/completed_consumer_list.xhtml"
+							rendered="#{request.isUserInRole('STOCK_ADMINSTRATOR')}" />
+
+					</p:submenu>
+
+
+					<p:submenu label="Channel"
+						rendered="#{request.isUserInRole('FULFILLMENT_AGENT') || request.isUserInRole('STOCK_CONTROLLER')}">
+						<p:menuitem value="Instructions"
+							url="/workInstruction/channel/new_channel_order_work_instruction_list.xhtml" />
+						<p:menuitem value="Sub-Instructions"
+							url="/workInstruction/channel/channel_order_work_instruction_list.xhtml" />
+
+					</p:submenu>
+
+					<p:submenu label="Consumer"
+						rendered="#{request.isUserInRole('FULFILLMENT_AGENT')}">
+						<p:menuitem value="Instructions"
+							outcome="/workInstruction/consumer/consumer_work_order_list.xhtml" />
+
+					</p:submenu>
+
+
+					<p:submenu label="Search"
+						rendered="#{request.isUserInRole('CUSTOMER_SERVICE_PROVIDER')}">
+						<p:menuitem value="Customer"
+							outcome="/search/customer_search.xhtml" />
+					</p:submenu>
+
+
+					<p:submenu label="Stock"
+						rendered="#{request.isUserInRole('FULFILLMENT_AGENT')}">
+						<p:menuitem value="Verify Stock"
+							action="#{stockVerifyController.reinitializeStockFiles()}" />
+					</p:submenu>
+
+
+					<p:submenu label="Audit Trail"
+						rendered="#{request.isUserInRole('SUPER_USER')}">
+						<p:menuitem value="Account Audit" url="/audit/account_audit.xhtml" />
+						<p:menuitem value="Phone Template"
+							outcome="/audit/phone_template_audit.xhtml" />
+						<p:menuitem value="Channel Order"
+							outcome="/audit/channel_order_audit.xhtml" />
+						<p:menuitem value="Consumer Order"
+							outcome="/audit/consumer_order_audit.xhtml" />
+						<p:menuitem value="Purchase Order"
+							outcome="/audit/purchase_order_audit.xhtml" />
+						<p:menuitem value="Stock Upload"
+							outcome="/audit/stock_upload_audit.xhtml" />
+						<p:menuitem value="Verify Stock"
+							outcome="/audit/stock_verify_audit.xhtml" />
+						<p:menuitem value="Channel Order Work Instruction"
+							outcome="/audit/channel_order_work_instruction_audit.xhtml" />
+						<p:menuitem value="Sub-Instructions"
+							outcome="/audit/sub_work_instruction_audit.xhtml" />
+						<p:menuitem value="Consumer Work Instruction"
+							outcome="/audit/consumer_work_instruction_audit.xhtml" />
+					</p:submenu>
+
+
+
+					<p:submenu label="Manage Accounts"
+						rendered="#{request.isUserInRole('SUPER_USER')}">
+						<p:menuitem value="Accounts" url="/account/account_list.xhtml" />
+					</p:submenu>
+					<p:menuitem>
+						<h:outputLabel
+							value="&#160;#{backOfficeLoginController.loggedInUser.fullName} / #{backOfficeLoginController.loggedInUser.email} "
+							style="color: #FFFFFF;" />
+					</p:menuitem>
+					<p:menuitem id="logOut">
+						<h:commandLink styleClass="lgOut"
+							action="#{backOfficeLoginController.logout()}" value="Logout"
+							style="color:#fff" />
+
+
+					</p:menuitem>
+
+				</p:menubar>
+
+			</h:form>
+
+
+		</div>
+
+	</div>
+
+	<div style="display: none;" id="source-button"
+		class="btn btn-primary btn-xs">&lt; &gt;</div>
+
+	<!--Logo section -->
+
+
+	<!--support numbers -->
+	<div id="support"></div>
+	<!--social tags -->
+	<div id="socialStrip"></div>
+	<!-- contentless coloured divider  -->
+	<div id="divider"></div>
+
+	<!--end header section -->
+
+	<div class="content">
+		<div class="container">
+			<ui:insert name="content">
+
+			</ui:insert>
+		</div>
+	</div>
+	<style>
+.ui-growl-item-container {
+	background: none repeat scroll 0 0 #ed455a;
+	height: 105px;
+	margin-left: -821px;
+	opacity: 1;
+	position: relative;
+	width: 920px;
+}
+
+.ui-growl-message {
+	float: left;
+	padding: 0 0 5px;
+	width: 920px;
+}
+
+.ui-growl {
+	top: 176px;
+}
+
+.fileupload-buttonbar .ui-button {
+	margin-right: 0.2em;
+	vertical-align: text-top;
+}
+
+.ui-menu .ui-menu-parent .ui-menu-child {
+	width: 15.5em;
+}
+</style>
+	<script type="text/javascript">
+	$(function () {
+	  $("[data-toggle='tooltip']").tooltip();
+	});
+</script>
+
+</h:body>
+</html>

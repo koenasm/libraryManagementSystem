@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:rich="http://richfaces.org/rich">
+
+
+
+	<ui:define name="content">
+
+		<h:form class="form-horizontal" role="form" prependId="false">
+			<h3>Book Details</h3>
+
+			<table id="compDetails">
+
+				<tr>
+					<td valign="top"><label for="inputName">Name</label> <h:inputText
+							type="text" class="form-control" id="inputName"
+							placeholder="Name" value="#{bookController.book.bookName}" /> <p:message
+							for="inputName" errorClass="invalid" /> 
+							
+							<label for="author">Author
+					</label> <h:inputText type="text" class="form-control" id="author"
+							maxlength="10" placeholder="Author"
+							value="#{bookController.book.author}" /> <p:message for="author"
+							errorClass="invalid" /></td>
+					<td valign="top">
+					
+					<label for="regNumber">Serial Number</label>
+						<p:inputMask type="text" styleClass="form-control" id="regNumber"
+							placeholder="RegNumber"
+							value="#{bookController.book.serialNumber}" /> <p:message
+							for="regNumber" errorClass="invalid" /> 
+							
+						
+						<label for="regNumber">Date Published</label> 
+						<p:calendar
+							id="popup" required="true" immediate="false"
+							value="#{bookController.book.datePublished}"
+							requiredMessage=" Please select preferred delivery date" /></td>
+				</tr>
+
+			</table>
+			<p:messages id="messages" showDetail="false" autoUpdate="true"
+				closable="true" />
+
+			<div class="btnContainer">
+				<h:commandButton action="#{bookController.addBookDetails()}"
+					value="Create" class="btn btn-primary" />
+				<h:button outcome="book_list.xhtml?faces-redirect=true"
+					class="btn btn-primary" value="Back" />
+			</div>
+		</h:form>
+
+		<style>
+cancel {
+	display: none;
+}
+
+#compDetails td {
+	width: 450px;
+}
+
+label {
+	height: 30px;
+	margin-top: 5px;
+}
+</style>
+	</ui:define>
+</ui:composition>
